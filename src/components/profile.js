@@ -13,7 +13,7 @@ export default class CardDeck extends Component {
             alt="profile"
           />
         </div>
-        <div className="col-lg-9 col-md-6">
+        <div className="col-lg-10 col-md-6">
           <div className="font-weight-bold">Robert Rayer</div>
           <div className="font-weight-bold">
             Software Engineer at Quality Distribution

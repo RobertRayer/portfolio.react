@@ -1,6 +1,7 @@
 import React from "react"
 import { Helmet } from "react-helmet"
-import "bootstrap/dist/css/bootstrap.min.css"
+
+import "../styles/themes/pulse/bootstrap.min.css"
 import "../styles/site.css"
 
 import Navbar from "react-bootstrap/Navbar"
@@ -32,7 +33,7 @@ export default ({ children, tab }) => {
         <title>Robert Rayer</title>
         <html lang="en" />
       </Helmet>
-      <Navbar bg="light" expand="lg">
+      <Navbar bg="primary" variant="dark" expand="lg">
         <Navbar.Brand href="/">Robert Rayer</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
