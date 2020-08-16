@@ -1,6 +1,6 @@
-import React from 'react';
-import { Helmet } from 'react-helmet';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import React from "react"
+import { Helmet } from "react-helmet"
+import "bootstrap/dist/css/bootstrap.min.css"
 
 import Navbar from "react-bootstrap/Navbar"
 import Nav from "react-bootstrap/Nav"
@@ -22,19 +22,41 @@ export default ({ children, tab }) => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto" defaultActiveKey="home" activeKey={tab}>
-            <Nav.Link href="/" eventKey="home">Home</Nav.Link>
-            <Nav.Link href="/resume" eventKey="resume">Resume</Nav.Link>
-            <Nav.Link href="/contact" eventKey="contact">Contact Me</Nav.Link>
-            <Nav.Link href="https://github.com/RobertRayer/portfolio">
+            <Nav.Link href="/" eventKey="home">
+              Home
+            </Nav.Link>
+            <Nav.Link href="/resume" eventKey="resume">
+              Resume
+            </Nav.Link>
+            <Nav.Link href="/contact" eventKey="contact">
+              Contact Me
+            </Nav.Link>
+            <Nav.Link
+              href="https://github.com/RobertRayer/portfolio"
+              target="_blank"
+              rel="noreferrer"
+            >
               Source
             </Nav.Link>
-            <Nav.Link href="https://www.linkedin.com/in/robert-rayer">
+            <Nav.Link
+              href="https://www.linkedin.com/in/robert-rayer"
+              target="_blank"
+              rel="noreferrer"
+            >
               LinkedIn
             </Nav.Link>
-            <Nav.Link href="https://robertrayer.com">
+            <Nav.Link
+              href="https://robertrayer.com"
+              target="_blank"
+              rel="noreferrer"
+            >
               View in ASP.NET Core
             </Nav.Link>
-            <Nav.Link href="https://robertrayer-portfolio-blazor.azurewebsites.net/">
+            <Nav.Link
+              href="https://robertrayer-portfolio-blazor.azurewebsites.net/"
+              target="_blank"
+              rel="noreferrer"
+            >
               View in Blazor
             </Nav.Link>
           </Nav>
@@ -42,5 +64,5 @@ export default ({ children, tab }) => {
       </Navbar>
       <div className="container container-fluid py-5">{children}</div>
     </>
-  );
-};
+  )
+}
