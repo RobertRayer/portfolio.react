@@ -2,7 +2,7 @@ import React, { Component } from "react"
 
 import ProfileImage from "../../images/profiledog.jpg"
 
-export default class CardDeck extends Component {
+export default class Profile extends Component {
   render() {
     return (
       <div className="row pt-5 pb-5">

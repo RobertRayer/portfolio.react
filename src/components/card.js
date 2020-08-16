@@ -2,7 +2,7 @@ import React, { Component } from "react"
 
 import Image from "react-bootstrap/Image"
 
-export default class CardDeck extends Component {
+export default class Card extends Component {
   render() {
     const data = this.props
     return (
