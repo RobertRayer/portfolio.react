@@ -5,6 +5,7 @@ import "../styles/site.css"
 
 import Navbar from "react-bootstrap/Navbar"
 import Nav from "react-bootstrap/Nav"
+import Footer from "../components/footer"
 
 import { library, config } from "@fortawesome/fontawesome-svg-core"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
@@ -77,6 +78,7 @@ export default ({ children, tab }) => {
         </Navbar.Collapse>
       </Navbar>
       <div className="container container-fluid py-5">{children}</div>
+      <Footer />
     </>
   )
 }

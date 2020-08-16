@@ -5,3 +5,23 @@
 .profile-image {
     width: 150px;
 }
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    position: relative;
+    min-height: 100%;
+  }
+  
+  body {
+      /* Margin bottom by footer height */
+      margin-bottom: 60px;
+      color: #343a40;
+      font-family: helvetica;
+  }
+  .footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+  }
