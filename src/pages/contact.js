@@ -6,7 +6,7 @@ import ContactForm from "../components/contact"
 export default class Contact extends Component {
   render() {
     return (
-      <Layout tab="resume">
+      <Layout tab="contact">
         <ContactForm />
       </Layout>
     )
