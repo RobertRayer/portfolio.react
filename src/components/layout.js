@@ -5,6 +5,15 @@ import "bootstrap/dist/css/bootstrap.min.css"
 import Navbar from "react-bootstrap/Navbar"
 import Nav from "react-bootstrap/Nav"
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import {
+  faHome,
+  faFile,
+  faEnvelope,
+  faCodeBranch,
+} from "@fortawesome/free-solid-svg-icons"
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons"
+
 export default ({ children, tab }) => {
   return (
     <>
@@ -23,41 +32,41 @@ export default ({ children, tab }) => {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto" defaultActiveKey="home" activeKey={tab}>
             <Nav.Link href="/" eventKey="home">
-              Home
+              <FontAwesomeIcon icon={faHome} /> Home
             </Nav.Link>
             <Nav.Link href="/resume" eventKey="resume">
-              Resume
+              <FontAwesomeIcon icon={faFile} /> Resume
             </Nav.Link>
             <Nav.Link href="/contact" eventKey="contact">
-              Contact Me
+              <FontAwesomeIcon icon={faEnvelope} /> Contact Me
             </Nav.Link>
             <Nav.Link
               href="https://github.com/RobertRayer/portfolio"
               target="_blank"
               rel="noreferrer"
             >
-              Source
+              <FontAwesomeIcon icon={faGithub} /> Source
             </Nav.Link>
             <Nav.Link
               href="https://www.linkedin.com/in/robert-rayer"
               target="_blank"
               rel="noreferrer"
             >
-              LinkedIn
+              <FontAwesomeIcon icon={faLinkedin} /> LinkedIn
             </Nav.Link>
             <Nav.Link
               href="https://robertrayer.com"
               target="_blank"
               rel="noreferrer"
             >
-              View in ASP.NET Core
+              <FontAwesomeIcon icon={faCodeBranch} /> View in ASP.NET Core
             </Nav.Link>
             <Nav.Link
               href="https://robertrayer-portfolio-blazor.azurewebsites.net/"
               target="_blank"
               rel="noreferrer"
             >
-              View in Blazor
+              <FontAwesomeIcon icon={faCodeBranch} /> View in Blazor
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
