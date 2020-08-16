@@ -6,6 +6,7 @@ import "../styles/site.css"
 import Navbar from "react-bootstrap/Navbar"
 import Nav from "react-bootstrap/Nav"
 
+import { library, config } from "@fortawesome/fontawesome-svg-core"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
   faHome,
@@ -16,6 +17,9 @@ import {
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons"
 
 export default ({ children, tab }) => {
+  config.autoAddCss = true
+
+  library.add(faHome, faFile, faEnvelope, faCodeBranch, faGithub, faLinkedin)
   return (
     <>
       <Helmet>
