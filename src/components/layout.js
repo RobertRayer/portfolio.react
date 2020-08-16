@@ -48,7 +48,7 @@ export default ({ children, tab }) => {
               <FontAwesomeIcon icon={faEnvelope} /> Contact Me
             </Nav.Link>
             <Nav.Link
-              href="https://github.com/RobertRayer/portfolio"
+              href="https://github.com/RobertRayer/portfolio.react"
               target="_blank"
               rel="noreferrer"
             >
