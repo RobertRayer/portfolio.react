@@ -17,7 +17,7 @@ import {
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons"
 
 export default ({ children, tab }) => {
-  config.autoAddCss = true
+  config.autoAddCss = false
 
   library.add(faHome, faFile, faEnvelope, faCodeBranch, faGithub, faLinkedin)
   return (
